@@ -4,29 +4,11 @@
     justify-content: center;
 }
 
-.parallax {
-    position: relative;
-}
-
-.parallax__img {
-    width: 100vw;
-    &--mountains {
-        z-index: 1;
-    }
-    &--train {
-        position: absolute;
-        top: 56%;
-        z-index: 5;
-    }
-    &--grass {
-        position: absolute;
-    top: 103%;
-    z-index: 10;
-    }
-}
-
-.welcome__container {
+.welcome__bg {
     position: absolute;
+    background-size: cover;
+    width: 100vw;
+    z-index: -5;
 }
 
 .welcome__header {
@@ -60,9 +42,10 @@
 }
 
 .welcome__me {
-    position: relative;
-    margin-top: 22%;
-    margin-left: 27%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 4;
     display: flex;
 }

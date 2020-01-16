@@ -2,65 +2,22 @@ include ./mixins.pug
 
 <!DOCTYPE html>
 html(lang="ru")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Portfolio | main page
-  body
-    .wrapper
-      .maincontent
-        .welcome
-          .parallax
-              +image('content/welcome/parallax-mountains.jpg', 'parallax__img parallax__img--mountains')
-              +image('content/welcome/parallax-train.png', 'parallax__img parallax__img--train')
-              +image('content/welcome/parallax-grass.png', 'parallax__img parallax__img--grass')
-          section.welcome__container.container
-            header.welcome__header
-              .welcome__logo.logo
-                p.logo__text VV
-              nav.nav
-                ul.nav__list
-                  li.nav__list-item
-                    a(href="#").nav__list-text Главная
-                  li.nav__list-item
-                    a(href="#").nav__list-text Обо мне
-                  li.nav__list-item
-                    a(href="#").nav__list-text Навыки
-                  li.nav__list-item
-                    a(href="#").nav__list-text Работы
-                  li.nav__list-item
-                    a(href="#").nav__list-text Отзывы
-                  li.nav__list-item
-                    a(href="#").nav__list-text Связаться
-              ul.welcome__socials.socials
-                li.socials__item
-                  a(href="#").socials__link
-                    +icon('insta', 'socials__img')
-                li.socials__item
-                  a(href="#").socials__link
-                    +icon('vk', 'socials__img')
-                li.socials__item
-                  a(href="#").socials__link
-                    +icon('github', 'socials__img')
-            h1.welcome__me
-              p.welcome__desc
-                |Личный сайт
-                |Веб разработчика
-              p.welcome__name
-                |Виталий
-                |&nbsp;Вязовой
-            .welcome__scroll
-              a(href="#").welcome__scroll-link
-                p.welcome__scroll-desc Скролл
-                .welcome__scroll_img
-                  +icon('scroll', 'welcome__scroll-icon')
-          //-section.about__container.container
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Portfolio | main page
+    body
+        .wrapper
+            .maincontent
+                include ./pug/sections/welcome.pug
+                
+    
+                section.skills
 
-        section.skills.fullscreen-section
-        section.work.fullscreen-section
-        section.comments.fullscreen-section
-        footer.footer.fullscreen-section
-        //- +image('content/user.jpg', 'user-pic')
-        //- +icon('link', 'link-class')
-        //- .icon-bg 
+                section.work
+                section.comments
+                footer.footer
+                //- +image('content/user.jpg', 'user-pic')
+                //- +icon('link', 'link-class')
+                //- .icon-bg 
