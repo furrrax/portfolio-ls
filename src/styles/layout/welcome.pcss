@@ -1,0 +1,50 @@
+.welcome {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.parallax {
+    position: relative;
+}
+
+.parallax__img {
+    width: 100vw;
+    &--mountains {
+        z-index: 1;
+    }
+    &--train {
+        position: absolute;
+        top: 50%;
+        z-index: 5;
+    }
+    &--grass {
+        position: absolute;
+    bottom: 0;
+    z-index: 10;
+    }
+}
+
+.welcome__container {
+    position: absolute;
+}
+
+.welcome__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.logo__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
