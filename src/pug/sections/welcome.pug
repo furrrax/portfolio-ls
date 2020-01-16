@@ -1,4 +1,4 @@
-.welcome
+section.welcome
     +image('content/welcome/welcome-bg.jpg', 'welcome__bg')
     //-.parallax
         +image('content/welcome/parallax-mountains.jpg', 'parallax__img parallax__img--mountains')
@@ -6,7 +6,7 @@
         +image('content/welcome/parallax-grass.png', 'parallax__img parallax__img--grass')
         .parallax__img.parallax__gradient
         +image('content/about-bg.jpg', 'parallax__img parallax__img--digits')
-    section.welcome__container.container
+    .welcome__container.container
         header.welcome__header
             .welcome__logo.logo
                 p.logo__text ВВ
@@ -24,16 +24,3 @@
                 p.welcome__scroll-desc Скролл
                 .welcome__scroll_img
                     +icon('scroll', 'welcome__scroll-icon')
-    //-section.about__container.container
-        .about__content
-            .about__mydata
-                .about__photo
-                .about__data
-                    .about__data-desc
-                    .about__data-text
-            .about__whoami
-                p.about__hello Привет, меня зовут
-                h2.about__name Виталий Вязовой
-                p.about__work Я занимаюсь разработкой современных сайтов и приложений.
-                    |Мне нравится делать интересные и современные проекты.
-                p.about__notation Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
