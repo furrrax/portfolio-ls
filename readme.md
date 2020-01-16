@@ -5,7 +5,7 @@
 
 ##  Чтобы развернуть проект необходимо:
 ```sh
-$ git clone https://github.com/furrrax/portfolio.git
+$ git clone https://github.com/furrrax/portfolio-ls.git
 $ cd ls-advanced-portfolio
 $ yarn
 ```
