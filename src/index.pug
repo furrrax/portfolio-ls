@@ -12,9 +12,9 @@ html(lang="ru")
       .maincontent
         .welcome
           .parallax
-              +image('content/parallax-mountains.jpg', 'parallax__img parallax__img--mountains')
-              +image('content/parallax-train.png', 'parallax__img parallax__img--train')
-              +image('content/parallax-grass.png', 'parallax__img parallax__img--grass')
+              +image('content/welcome/parallax-mountains.jpg', 'parallax__img parallax__img--mountains')
+              +image('content/welcome/parallax-train.png', 'parallax__img parallax__img--train')
+              +image('content/welcome/parallax-grass.png', 'parallax__img parallax__img--grass')
           section.welcome__container.container
             header.welcome__header
               .welcome__logo.logo
@@ -51,9 +51,9 @@ html(lang="ru")
                 |Виталий
                 |&nbsp;Вязовой
             .welcome__scroll
-              p.welcome__scroll-desc Скролл
-              .welcome__scroll_img
-                a(href="#").welcome__scroll-link
+              a(href="#").welcome__scroll-link
+                p.welcome__scroll-desc Скролл
+                .welcome__scroll_img
                   +icon('scroll', 'welcome__scroll-icon')
           //-section.about__container.container
 
