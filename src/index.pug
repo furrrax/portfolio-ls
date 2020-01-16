@@ -10,7 +10,7 @@ html(lang="ru")
   body
     .wrapper
       .maincontent
-        .welcome.fullscreen-section
+        .welcome
           .parallax
               +image('content/parallax-mountains.jpg', 'parallax__img parallax__img--mountains')
               +image('content/parallax-train.png', 'parallax__img parallax__img--train')
@@ -22,17 +22,17 @@ html(lang="ru")
               nav.nav
                 ul.nav__list
                   li.nav__list-item
-                    a(href="#").nav__list-text главная
+                    a(href="#").nav__list-text Главная
                   li.nav__list-item
-                    a(href="#").nav__list-text обо мне
+                    a(href="#").nav__list-text Обо мне
                   li.nav__list-item
-                    a(href="#").nav__list-text навыки
+                    a(href="#").nav__list-text Навыки
                   li.nav__list-item
-                    a(href="#").nav__list-text работы
+                    a(href="#").nav__list-text Работы
                   li.nav__list-item
-                    a(href="#").nav__list-text отзывы
+                    a(href="#").nav__list-text Отзывы
                   li.nav__list-item
-                    a(href="#").nav__list-text связаться
+                    a(href="#").nav__list-text Связаться
               ul.welcome__socials.socials
                 li.socials__item
                   a(href="#").socials__link
@@ -43,15 +43,19 @@ html(lang="ru")
                 li.socials__item
                   a(href="#").socials__link
                     +icon('github', 'socials__img')
-            h1.welcome__name
-              p.welcome__desc Личный сайт веб разработчика
-              p.welcome__text Виталий Вязовой
+            h1.welcome__me
+              p.welcome__desc
+                |Личный сайт
+                |Веб разработчика
+              p.welcome__name
+                |Виталий
+                |&nbsp;Вязовой
             .welcome__scroll
               p.welcome__scroll-desc Скролл
               .welcome__scroll_img
                 a(href="#").welcome__scroll-link
                   +icon('scroll', 'welcome__scroll-icon')
-          section.about
+          section.about__container.container
 
         section.skills.fullscreen-section
         section.work.fullscreen-section

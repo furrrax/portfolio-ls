@@ -15,12 +15,12 @@
     }
     &--train {
         position: absolute;
-        top: 50%;
+        top: 56%;
         z-index: 5;
     }
     &--grass {
         position: absolute;
-    bottom: 0;
+    top: 103%;
     z-index: 10;
     }
 }
@@ -38,13 +38,57 @@
 
 .logo__text {
     font-family: 'Open Sans', sans-serif;
-    font-size: 36px;
     font-weight: 800;
     color: #fff;
+    font-size: 36px;
 }
 
 .nav__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
+.nav__list-item {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 60px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.welcome__me {
+    position: relative;
+    margin-top: 22%;
+    margin-left: 27%;
+    z-index: 4;
+    display: flex;
+}
+
+.welcome__desc {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #837d75;
+    font-size: 18px;
+    line-height: 190%;
+    white-space: pre-line;
+    margin-right: 60px;
+    text-align: right;
+}
+
+.welcome__name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    font-size: 72px;
+    line-height: 82%;
+    white-space: pre-line;
+}
+
+.welcome__scroll-icon {
+    height: 30px;
+    width: 20px;
+    fill: #fff;
+}
