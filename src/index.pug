@@ -10,11 +10,11 @@ html(lang="ru")
     body
         .wrapper
             .maincontent
-                include ./pug/sections/welcome.pug
-                include ./pug/sections/about.pug
-                
-    
-                section.skills
+                .welcome__section
+                    //-+image('content/welcome/welcome-full-bg.jpg', 'welcome__full-bg')
+                    include ./pug/sections/welcome.pug
+                    include ./pug/sections/about.pug
+                include ./pug/sections/skills.pug
                 section.work
                 section.comments
                 footer.footer

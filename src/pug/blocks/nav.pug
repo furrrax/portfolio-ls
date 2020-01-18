@@ -1,14 +1,6 @@
 nav.nav
+    - var menu = ['Главная', "Обо мне", "Навыки", "Работы", "Отзывы", "Связаться"]
     ul.nav__list
-        li.nav__list-item
-            a(href="#").nav__list-text Главная
-        li.nav__list-item
-            a(href="#").nav__list-text Обо мне
-        li.nav__list-item
-            a(href="#").nav__list-text Навыки
-        li.nav__list-item
-            a(href="#").nav__list-text Работы
-        li.nav__list-item
-            a(href="#").nav__list-text Отзывы
-        li.nav__list-item
-            a(href="#").nav__list-text Связаться
+        each item in menu
+            li.nav__list-item
+                a(href="").nav__link #{item}
