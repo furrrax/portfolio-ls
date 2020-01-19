@@ -15,8 +15,12 @@ html(lang="ru")
                     include ./pug/sections/welcome.pug
                     include ./pug/sections/about.pug
                 include ./pug/sections/skills.pug
-                section.work
-                section.comments
+                include ./pug/sections/work.pug
+                .comments__section
+                    +image('content/comments/comments-full-bg.jpg', 'comments__bg')
+                    include ./pug/sections/comments.pug
+                    include ./pug/sections/contact.pug
+                
                 footer.footer
                 //- +image('content/user.jpg', 'user-pic')
                 //- +icon('link', 'link-class')

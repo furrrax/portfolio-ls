@@ -1,0 +1,17 @@
+section.contact
+    .contact__container.container
+        .contact__title.title Связаться со мной
+        form.contact__form
+            .contact__row.contact__row-userdata
+                label.contact__label
+                    span.contact__subtitle Введите ваше имя
+                    input.contact__name(type="text" name="name" placeholder="Ковальчук Дмитрий" required)
+                label.contact__label
+                    span.contact__subtitle Введите ваш email
+                    input.contact__name(type="text" name="email" placeholder="loftschool@stoody.com" required)
+            .contact__row.contact__row-message
+                label.contact__label
+                    span.contact__subtitle Сообщение к письму
+                    input.contact__name(type="textarea" name="message" placeholder="Требуется ваша помощь в создании сайта. Интересую сроки и цена вопроса" required)
+            .contact__row.contact__row-button
+                .contact__button Отправить

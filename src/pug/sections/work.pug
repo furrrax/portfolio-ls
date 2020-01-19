@@ -1,0 +1,45 @@
+section.work
+    .work__container.container
+        .work__title.title Мои работы
+        .work__content
+            .work__slider-content
+                .slider__wrap
+                    .slider
+                        ul.slider__list
+                            li.slider__item
+                                a.slider__link(href="#")
+                                    +image('content/work/slides/slide-thumb-01.jpg', 'slide__preview', 'превью слайда')
+                            li.slider__item
+                                a.slider__link(href="#")
+                                    +image('content/work/slides/slide-thumb-02.jpg', 'slide__preview', 'превью слайда')
+                            li.slider__item
+                                a.slider__link(href="#")
+                                    +image('content/work/slides/slide-thumb-03.jpg', 'slide__preview', 'превью слайда')
+                            li.slider__item
+                                a.slider__link(href="#")
+                                    +image('content/work/slides/slide-thumb-04.jpg', 'slide__preview', 'превью слайда')
+                    .slider__buttons
+                        a.slider__button.slider__button--next(href="#")
+                            +icon('arrow-down', 'slider__icon')
+                        a.slider__button.slider__button--prev(href="#")
+                            +icon('arrow-down', 'slider__icon')
+                .slider__count 2
+            .work__description-content
+                .work__tags
+                    - var tags = ['HTML', 'CSS', 'JavaScript']
+                    ul.work__tags-list
+                        each item in tags
+                            li.work__tags-item
+                                p.work__tags-text #{item}
+                .work__site
+                    .work__site-item.title
+                        p Сайт школы образования
+                .work__description
+                    .work__description-item
+                        p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                .work__url
+                    .work__url-item
+                        a.work__url-link(href="#") 
+                            +icon('link', 'work__url-icon')
+                            p Посмотреть сайт
+
