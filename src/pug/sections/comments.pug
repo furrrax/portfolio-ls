@@ -8,23 +8,25 @@ section.comments
                 a.comments__button.comments__button--next(href="#")
                     +icon('arrow-down', 'comments__icon')
         .comments__description
-            .comments__item
-                .comments__text
-                    p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
-                .comments__user
-                    .comments__avatar
-                        .avatar.comments__avatar
-                            +image('content/comments/dima.png', 'avatar__image', 'user pic')
-                    .comments__user-info
-                        .comments__username.title Ковальчук Дмитрий
-                        .comments__user-about Основатель Loftschool
-            .comments__item
-                .comments__text
-                    p Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах
-                .comments__user
-                    .comments__avatar
-                        .avatar.comments__avatar
-                            +image('content/comments/vladimir.png', 'avatar__image', 'user pic')
-                    .comments__user-info
-                        .comments__username.title Владимир Сабанцев
-                        .comments__user-about Преподаватель
+            .comments__wrap
+                .comments__item
+                    .comments__text
+                        p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+                    .comments__user
+                        .comments__avatar
+                            .avatar.comments__avatar
+                                +image('content/comments/dima.jpg', 'avatar__image', 'user pic')
+                        .comments__user-info
+                            .comments__username.title Ковальчук Дмитрий
+                            .comments__user-about Основатель Loftschool
+            .comments__wrap
+                .comments__item
+                    .comments__text
+                        p Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах
+                    .comments__user
+                        .comments__avatar
+                            .avatar.comments__avatar
+                                +image('content/comments/vladimir.jpg', 'avatar__image', 'user pic')
+                        .comments__user-info
+                            .comments__username.title Владимир Сабанцев
+                            .comments__user-about Преподаватель

@@ -4,12 +4,29 @@
 }
 
 .nav__list-item {
+    position: relative;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #fff;
     font-size: 16px;
-    margin-right: 60px;
-    &:last-child {
-        margin-right: 0;
+    padding: 0 30px;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 200%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-bottom: solid #ff9a00 2px;
+        width: 0;
+        transition: width .6s;
+    }
+    
+    &:hover {
+        color: #ff9a00;
+        &:after {
+            width: 100%;
+            transition: width .6s;
+        }
     }
 }

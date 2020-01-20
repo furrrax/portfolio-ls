@@ -30,10 +30,10 @@ section.work
                     ul.work__tags-list
                         each item in tags
                             li.work__tags-item
-                                p.work__tags-text #{item}
+                                span.work__tags-text #{item}
                 .work__site
                     .work__site-item.title
-                        p Сайт школы образования
+                        span Сайт школы образования
                 .work__description
                     .work__description-item
                         p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
@@ -41,5 +41,5 @@ section.work
                     .work__url-item
                         a.work__url-link(href="#") 
                             +icon('link', 'work__url-icon')
-                            p Посмотреть сайт
+                            span.work__url-text Посмотреть сайт
 
