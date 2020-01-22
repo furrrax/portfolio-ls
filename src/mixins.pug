@@ -23,12 +23,3 @@ mixin nav(navClassName, listClassName, itemClassName, linkClassName, ...items)
               each item in menu
                   li(class=itemClassName)
                       a(href="#")(class=linkClassName) #{item}
-
-
-
-//-nav.nav
-    - var menu = ['Главная', 'Обо мне', 'Навыки', 'Работы', 'Отзывы', 'Связаться']
-    ul.nav__list
-        each item in menu
-            li.nav__list-item
-                a(href="#").nav__link #{item}

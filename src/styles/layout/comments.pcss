@@ -9,11 +9,26 @@
     justify-content: center;
 }
 
+.comments__leaf {
+    position: absolute;
+    &--up {
+        top: -170px;
+        right: 0;
+    }
+    &--down {
+        bottom: 50px;
+        right: 360px;
+    }
+}
+
+.comments__container {
+    position: relative;
+}
+
 .comments__bg {
     position: absolute;
     background-size: cover;
     width: 100vw;
-    /* height: 100vh; */
     z-index: -5;
 }
 
