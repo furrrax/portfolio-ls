@@ -4,8 +4,8 @@ section.welcome
         header.welcome__header
             .welcome__logo.logo
                 p.logo__text ВВ
-            include ../blocks/nav.pug
-            include ../blocks/socials.pug
+            +nav('nav', 'nav__list', 'nav__list-item', 'nav__link')
+            +socials('socials__list', 'socials__item', 'socials__link', 'socials__img', 'insta', 'vk', 'github')
         h1.welcome__me
             p.welcome__desc
                 |Личный сайт

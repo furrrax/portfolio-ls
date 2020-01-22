@@ -1,6 +1,0 @@
-- var icons = ['insta', 'vk', 'github']
-    ul.welcome__socials.socials
-        each item, index in icons
-            li.socials__item(class=`${index === 1 ? 'active' : ''}`)
-                a(href="#").socials__link
-                    +icon(`${item}`, 'socials__img')

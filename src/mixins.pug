@@ -8,3 +8,27 @@ mixin image(path, className, description, attrRole)
     img(src=require(`images/${path}`) class=className role=attrRole)
   else
     img(src=require(`images/${path}`) class=className alt=description)
+
+mixin socials(listClassName, itemClassName, iconAreaClassName, iconClassName, ...items)
+      ul(class=listClassName)
+          each item in items
+              li(class=itemClassName)
+                  a(href="#")(class=iconAreaClassName)
+                      +icon(item, iconClassName)
+
+mixin nav(navClassName, listClassName, itemClassName, linkClassName, ...items)
+      nav(class=navClassName)
+          - var menu = ['Главная', 'Обо мне', 'Навыки', 'Работы', 'Отзывы', 'Связаться']
+          ul(class=listClassName)
+              each item in menu
+                  li(class=itemClassName)
+                      a(href="#")(class=linkClassName) #{item}
+
+
+
+//-nav.nav
+    - var menu = ['Главная', 'Обо мне', 'Навыки', 'Работы', 'Отзывы', 'Связаться']
+    ul.nav__list
+        each item in menu
+            li.nav__list-item
+                a(href="#").nav__link #{item}

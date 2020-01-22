@@ -62,19 +62,26 @@
     justify-content: flex-start;
 }
 
-.footer__info-left {
+.footer__info-left, .footer__info-right {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 300px;
+    justify-content: space-between;
+    height: 130px;
 }
 
-.footer__socials {
-    margin-top: 30px;
+.footer__info-left {
+    max-width: 300px;
+    margin-right: 190px;
 }
 
 .footer__info-right {
     max-width: 400px;
+}
+
+.footer__socials {
+    margin-left: 12px;
+    margin-bottom: 12px;
 }
 
 .footer__info-text, .footer__citation {
