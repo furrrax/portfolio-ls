@@ -11,13 +11,13 @@ html(lang="ru")
         .wrapper
             .maincontent
                 .welcome__section
-                    +image('content/welcome/welcome-full-bg.jpg', 'welcome__full-bg')
+                    //-+image('content/welcome/welcome-full-bg.jpg', 'welcome__full-bg')
                     include ./pug/sections/welcome.pug
                     include ./pug/sections/about.pug
                 include ./pug/sections/skills.pug
                 include ./pug/sections/work.pug
                 .comments__section
-                    +image('content/comments/comments-full-bg.jpg', 'comments__bg')
+                    //-+image('content/comments/comments-full-bg.jpg', 'comments__bg')
                     include ./pug/sections/comments.pug
                     include ./pug/sections/contact.pug
                 include ./pug/sections/footer.pug
