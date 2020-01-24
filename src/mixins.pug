@@ -16,7 +16,7 @@ mixin socials(listClassName, itemClassName, iconAreaClassName, iconClassName, ..
                   a(href="#")(class=iconAreaClassName)
                       +icon(item, iconClassName)
 
-mixin nav(navClassName, listClassName, itemClassName, linkClassName, ...items)
+mixin nav(navClassName, listClassName, itemClassName, linkClassName)
       nav(class=navClassName)
           - var menu = ['Главная', 'Обо мне', 'Навыки', 'Работы', 'Отзывы', 'Связаться']
           ul(class=listClassName)
