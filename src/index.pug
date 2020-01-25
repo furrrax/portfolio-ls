@@ -14,7 +14,16 @@ html(lang="ru")
                     //-+image('content/welcome/welcome-full-bg.jpg', 'welcome__full-bg')
                     include ./pug/sections/welcome.pug
                     include ./pug/sections/about.pug
-                include ./pug/sections/skills.pug
+                //-include ./pug/sections/skills.pug
+                section.skills
+                    +image('content/skills/skills-hands.png', 'skills__hands', 'картинка руки за ноутом')
+                    .skills__container.container
+                        .skills__desc
+                            h2.skills__title.title Чем я могу быть полезен вам
+                            .skills__text 
+                                p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+                        #skills-component
+                        
                 include ./pug/sections/work.pug
                 .comments__section
                     //-+image('content/comments/comments-full-bg.jpg', 'comments__bg')
@@ -25,3 +34,4 @@ html(lang="ru")
                 //- +image('content/user.jpg', 'user-pic')
                 //- +icon('link', 'link-class')
                 //- .icon-bg 
+                include ./entry.pug
