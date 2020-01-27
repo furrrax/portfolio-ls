@@ -1,24 +1,31 @@
 .about {
     position: relative;
     max-height: 700px;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+    /* background-color: #222426; */
+
 }
 
 .about__bg {
+    bottom: 0;
     position: absolute;
     background-size: cover;
     width: 100vw;
-    z-index: -5;
+    z-index: 19;
+    height: 100%;
 }
 
 .about__container {
     display: flex;
     justify-content: center;
+    z-index: 20;
 }
 
 .about__wrapper {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
 }
 
 .about__row-me {

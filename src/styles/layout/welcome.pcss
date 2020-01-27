@@ -1,30 +1,47 @@
-.welcome__section {
-    background-image: url(../images/content/welcome/welcome-full-bg.jpg);
-    background-size: cover;
-}
-
-.welcome__full-bg {
+/* .welcome__full-bg {
     position: absolute;
     background-size: cover;
     width: 100vw;
     z-index: -5;
+} */
+
+.parallax {
+    position: relative;
+}
+
+.parallax__layer {
+    position: absolute;
+    &--mountains {
+        position: absolute;
+        top: -105px;
+        left: 0;
+        z-index: 5;
+    }
+    &--train {
+        position: absolute;
+        top: 430px;
+        z-index: 10;
+    }
+    &--grass {
+        position: absolute;
+        top: 775px;
+        z-index: 15;
+    }
+}
+
+.parallax__img {
+    width: 100vw;
 }
 
 .welcome {
     position: relative;
     display: flex;
     justify-content: center;
+    z-index: 50;
 }
 
 .welcome__container {
     padding-top: 65px;
-}
-
-.welcome__bg {
-    position: absolute;
-    background-size: cover;
-    width: 100vw;
-    z-index: -5;
 }
 
 .welcome__header {
@@ -45,7 +62,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 4;
+    z-index: 6;
     display: flex;
 }
 

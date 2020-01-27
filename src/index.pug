@@ -11,10 +11,18 @@ html(lang="ru")
         .wrapper
             .maincontent
                 .welcome__section
+                    .parallax
+                        .parallax__layer.parallax__layer--mountains
+                            +image('content/welcome/parallax-mountains.jpg', 'parallax__img parallax__img--mountains')
+                        .parallax__layer.parallax__layer--train
+                            +image('content/welcome/parallax-train.png', 'parallax__img parallax__img--train')
+                        .parallax__layer.parallax__layer--grass
+                            +image('content/welcome/parallax-grass.png', 'parallax__img parallax__img--grass')
+                        .parallax__content
+
                     //-+image('content/welcome/welcome-full-bg.jpg', 'welcome__full-bg')
                     include ./pug/sections/welcome.pug
                     include ./pug/sections/about.pug
-                //-include ./pug/sections/skills.pug
                 section.skills
                     +image('content/skills/skills-hands.png', 'skills__hands', 'картинка руки за ноутом')
                     .skills__container.container
@@ -26,7 +34,6 @@ html(lang="ru")
                         
                 include ./pug/sections/work.pug
                 .comments__section
-                    //-+image('content/comments/comments-full-bg.jpg', 'comments__bg')
                     include ./pug/sections/comments.pug
                     include ./pug/sections/contact.pug
                 include ./pug/sections/footer.pug
