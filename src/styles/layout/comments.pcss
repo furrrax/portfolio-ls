@@ -1,23 +1,26 @@
 .comments__section {
     background-image: url(../images/content/comments/comments-full-bg.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .comments {
     position: relative;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    height: 0;
 }
 
 .comments__leaf {
     position: absolute;
     &--up {
-        top: -170px;
+        top: -26%;
         right: 0;
     }
     &--down {
-        bottom: 50px;
-        right: 360px;
+        bottom: 7%;
+        right: 20%;
     }
 }
 
@@ -64,14 +67,13 @@
 }
 
 .comments__description {
-    //margin-left: 95px;
-    margin-top: 105px;
+    margin-top: 5%;
     display: flex;
 }
 
 .comments__wrap {
     display: flex;
-    margin-right: 70px;
+    margin-right: 5%;
     &:before {
         content: '';
         background: svg-load('quote.svg', fill=#fff, width=100%, height=100%);
@@ -79,6 +81,9 @@
         height: 60px;
         margin-right: 20px;
         opacity: .05;
+    }
+    &:last-child {
+        margin-right: 0;
     }
 }
 

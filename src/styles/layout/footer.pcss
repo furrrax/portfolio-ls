@@ -10,13 +10,20 @@
 }
 
 .footer__item-left {
-    margin-right: 125px;
+    margin-right: 8%;
     display: flex;
+    width: 378px;
+    justify-content: space-between;
+    @include desktop {
+        width: 180px;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
 }
 
-.footer__year {
-    margin-right: 60px;
-}
+/* .footer__year {
+    margin-right: 5%;
+} */
 
 .footer__year-text {
     font-family: 'Open Sans', sans-serif;
@@ -52,14 +59,15 @@
 .footer__item-right {
     display: flex;
     flex-direction: column;
-    flex-direction: column;
     align-items: flex-start;
+    width: 980px;
 }
 
 .footer__info {
     margin-top: 70px;
     display: flex;
     justify-content: flex-start;
+    width: 100%;
 }
 
 .footer__info-left, .footer__info-right {
@@ -67,12 +75,14 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: 130px;
 }
 
 .footer__info-left {
     max-width: 300px;
-    margin-right: 190px;
+    margin-right: 19%;
+    @include desktop {
+        margin-right: 9%;
+    }
 }
 
 .footer__info-right {

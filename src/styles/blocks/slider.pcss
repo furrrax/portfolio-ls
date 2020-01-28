@@ -6,6 +6,10 @@
     background-size: cover;
     width: 977px;
     height: 550px;
+    @include desktop {
+        width: 662px;
+        height: 355px;
+    }
 }
 
 .slider-bg {
@@ -26,7 +30,6 @@
 
 .slider__item {
     &:first-child {
-        //border: solid #dc9322 3px;
         outline: 3px solid #dc9322;
         z-index: 10;
     }
@@ -34,7 +37,6 @@
 
 .slider__link {
     width: 178px;
-    //height: 100px;
     overflow: hidden;
 }
 
@@ -79,4 +81,7 @@
     font-size: 400px;
     color: #e6e6e6;
     z-index: -5;
+    @include desktop {
+        font-size: 300px;
+    }
 }

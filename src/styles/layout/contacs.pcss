@@ -1,18 +1,25 @@
 .contact {
     position: relative;
     display: flex;
-    justify-content: center;
+    height: 0;
+    align-items: center;
 }
 
 .contact__leaf {
     position: absolute;
     &--up {
-        top: 50px;
-        right: 200px;
+        top: 12%;
+        right: 11%;
+        @include desktop {
+            right: 4%;
+        }
     }
     &--down {
-        bottom: 100px;
-        right: 205px;
+        bottom: 3%;
+        right: 8%;
+        @include desktop {
+            right: 4%;
+        }
     }
 }
 
@@ -27,7 +34,7 @@
 }
 
 .contact__form {
-    margin-top: 90px;
+    margin-top: 5%;
 }
 
 .contact__row {
@@ -42,7 +49,8 @@
     display: flex;
     align-items: flex-end;
     &--name {
-        margin-right: 97px;
+        margin-right: 7%;
+        width: 380px;
         &:before {
             content: '';
             background: svg-load('user.svg', fill=#656667, width=100%, height=100%);
@@ -52,6 +60,7 @@
         }
     }
     &--email {
+        width: 380px;
         &:before {
             content: '';
             background: svg-load('envelope.svg', fill=#656667, width=100%, height=100%);
@@ -61,7 +70,7 @@
         }
     }
     &--message {
-        width: 650px;
+        width: 860px;
         align-items: center;
         &:before {
             content: '';
@@ -107,7 +116,7 @@
     border: 0;
 
     &--message {
-        height: 70px;
+        height: 72px;
         width: 427px;
         resize: none;
         line-height: 190%;
