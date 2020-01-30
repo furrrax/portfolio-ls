@@ -6,6 +6,9 @@
 .skills-widget {
     margin-top: 5%;
     margin-left: 34%;
+    @include tablets {
+        margin-left: 0;
+    }
 }
 
 .user-skills__item {
@@ -19,7 +22,17 @@
     font-size: 24px;
 }
 
+.skills-row__title {
+    @include tablets {
+        text-align: center;
+    }
+}
+
 .skill__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #979595;
 }
 
@@ -31,6 +44,9 @@
 
 .skills-row__item {
     margin-right: 50px;
+    @include tablets {
+        margin-right: 30px;
+    }
     &:last-child {
         margin-right: 0;
     }
@@ -39,8 +55,12 @@
 .skill {
     position: relative;
     text-align: center;
-    width: 165px;
-    height: 165px;
+    width: 145px;
+    height: 145px;
+    @include tablets {
+        width: 125px;
+        height: 125px;
+    }
 }
 
 .skill__circle {

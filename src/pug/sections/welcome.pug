@@ -3,8 +3,11 @@ section.welcome
         header.welcome__header
             .welcome__logo.logo
                 p.logo__text ВВ
-            +nav('nav', 'nav__list', 'nav__list-item', 'nav__link')
-            +socials('socials__list', 'socials__item', 'socials__link', 'socials__img', 'insta', 'vk', 'github')
+            .welcome__nav
+                +nav('nav', 'nav__list', 'nav__list-item', 'nav__link')
+            .welcome__socials
+                +socials('socials__list', 'socials__item', 'socials__link', 'socials__img', 'insta', 'vk', 'github')
+            include ../blocks/hamburger-menu.pug
         h1.welcome__me
             p.welcome__desc
                 |Личный сайт

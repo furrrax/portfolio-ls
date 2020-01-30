@@ -19,14 +19,25 @@
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
+    @include tablets {
+        flex-direction: column;
+        margin-top: 60px;
+    }
 }
 
 .work__slider-content {
     position: relative;
+    margin-right: 100px;
+    @include tablets {
+        margin-right: 0;
+    }
 }
 
 .work__description-content {
     max-width: 348px;
+    @include tablets {
+        max-width: 455px;
+    }
 }
 
 .work__tags-list {

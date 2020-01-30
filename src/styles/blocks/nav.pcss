@@ -1,6 +1,12 @@
 .nav__list {
     display: flex;
     justify-content: center;
+    &--footer {
+        @include tablets {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+    }
 }
 
 .nav__list-item {
@@ -36,5 +42,10 @@
         &:last-child {
             margin-right: 0;
         }
-    }
+        @include tablets {
+            &:nth-last-child(-n+2) {
+                margin-top: 30px;
+            }
+        }
+    }   
 }

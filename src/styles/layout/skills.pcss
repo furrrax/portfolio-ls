@@ -4,6 +4,11 @@
     background-size: cover;
     display: flex;
     align-items: center;
+    @include tablets {
+        height: 100%;
+        padding-top: 130px;
+        padding-bottom: 350px;
+    }
 }
 
 .skills__container {
@@ -25,14 +30,30 @@
         left: -6%;
         width: 37%;
     }
+    @include tablets {
+        top: 100%;
+        left: 50%;
+        transform: rotate(-90deg) translateY(-50%);
+        transform-origin: 0 0;
+        width: 45%;
+    }
 }
 
 .skills__desc {
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    @include tablets {
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .skills__title {
     font-size: 30px;
+    @include tablets {
+        width: 265px;
+    }
 }
 
 .skills__text {
@@ -42,11 +63,8 @@
     color: #949494;
     margin-top: 65px;
     line-height: 190%;
-}
-
-.skill__title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include tablets {
+        margin-top: 32px;
+        width: 465px;
+    }
 }

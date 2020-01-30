@@ -1,0 +1,36 @@
+.hamburger__link {
+    margin-left: 90px;
+    @include desktopHd {
+        display: none;
+    }
+    @include desktop {
+        display: none;
+    }
+    @include tablets {
+        display: block;
+    }
+}
+
+.hamburger__link-item {
+	width: 24px;
+	height: 4px;
+	background: #fff;
+	position: relative;
+
+	&:before, &:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 24px;
+		height: 4px;
+		background: #fff;
+	}
+	&:before {
+		bottom: 100%;
+		margin-bottom: 4px;
+	}
+	&:after {
+		top: 100%;
+		margin-top: 4px;
+	}
+}

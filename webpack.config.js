@@ -113,6 +113,10 @@ module.exports = (env, argv) => {
       hints: false
     },
     plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery'
+      }),
       new HtmlWebpackPlugin({
         template: "src/index.pug",
         chunks: ["main"]
