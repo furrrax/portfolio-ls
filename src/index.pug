@@ -12,16 +12,15 @@ html(lang="ru")
             .maincontent
                 .welcome__section
                     .parallax
-                        .parallax__layer.parallax__layer--sky
-                            +image('content/welcome/parallax-sky.jpg', 'parallax__img')
-                        .parallax__layer.parallax__layer--mountains
-                            +image('content/welcome/parallax-mountains.png', 'parallax__img')
-                        .parallax__layer.parallax__layer--train
-                            +image('content/welcome/parallax-train.png', 'parallax__img')
-                        .parallax__layer.parallax__layer--grass
-                            +image('content/welcome/parallax-grass.png', 'parallax__img')
-                        .parallax__layer.parallax__layer--gradient
-                            +image('content/welcome/parallax-gradient.png', 'parallax__img')
+                        picture.parallax__layer.parallax__layer--sky
+                            //-source(srcset="images/content/welcome/parallax-sky-1920.jpg" media="(min-width: 1920px)").parallax__img
+                            +image('content/welcome/parallax-sky-1920.jpg', 'parallax__img')
+                        picture.parallax__layer.parallax__layer--mountains
+                            +image('content/welcome/parallax-mountains-1920.png', 'parallax__img')
+                        picture.parallax__layer.parallax__layer--train
+                            +image('content/welcome/parallax-train-1920.png', 'parallax__img')
+                        picture.parallax__layer.parallax__layer--grass
+                            +image('content/welcome/parallax-grass-1920.png', 'parallax__img')
 
                     include ./pug/sections/welcome.pug
                     include ./pug/sections/about.pug

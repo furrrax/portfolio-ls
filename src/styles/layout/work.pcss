@@ -36,9 +36,25 @@
 }
 
 .work__description-content {
+    display: flex;
+    justify-content: center;
+    @include tablets {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+.work__description-wrap {
     max-width: 348px;
     @include tablets {
         max-width: 455px;
+    }
+}
+
+.work__tags {
+    @include tablets {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -77,6 +93,9 @@
 
 .work__description {
     margin-top: 45px;
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .work__description-item {
@@ -87,6 +106,10 @@
 
 .work__url {
     margin-top: 50px;
+    @include tablets {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .work__url-link {

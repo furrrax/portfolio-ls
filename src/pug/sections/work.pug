@@ -26,21 +26,22 @@ section.work
                             +icon('arrow-down', 'slider__icon')
                     .slider__count 2
             .work__description-content
-                .work__tags
-                    - var tags = ['HTML', 'CSS', 'JavaScript']
-                    ul.work__tags-list
-                        each item in tags
-                            li.work__tags-item
-                                span.work__tags-text #{item}
-                .work__site
-                    .work__site-item.title
-                        span Сайт школы образования
-                .work__description
-                    .work__description-item
-                        p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                .work__url
-                    .work__url-item
-                        a.work__url-link(href="#") 
-                            +icon('link', 'work__url-icon')
-                            span.work__url-text Посмотреть сайт
+                .work__description-wrap
+                    .work__tags
+                        - var tags = ['HTML', 'CSS', 'JavaScript']
+                        ul.work__tags-list
+                            each item in tags
+                                li.work__tags-item
+                                    span.work__tags-text #{item}
+                    .work__site
+                        .work__site-item.title
+                            span Сайт школы образования
+                    .work__description
+                        .work__description-item
+                            p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    .work__url
+                        .work__url-item
+                            a.work__url-link(href="#") 
+                                +icon('link', 'work__url-icon')
+                                span.work__url-text Посмотреть сайт
 
