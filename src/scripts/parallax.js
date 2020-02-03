@@ -15,7 +15,7 @@ var parallax = (function () {
         init: function (wScroll) {
             this.move(mountains, wScroll, 45);
             this.move(train, wScroll, 40);
-            this.move(grass, wScroll, 20);
+            this.move(grass, wScroll, 40);
         }
     }
 }());

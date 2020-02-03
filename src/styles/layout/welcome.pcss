@@ -1,35 +1,54 @@
-.parallax {
+.welcome__section {
     position: relative;
+}
+
+.parallax {
+    //position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
 }
 
 .parallax__layer {
     position: absolute;
-    &--mountains {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    bottom: 0;
+    &--sky {
         position: absolute;
         top: 0;
-        left: 0;
+        z-index: 5;
+    }
+    &--mountains {
+        position: absolute;
+        top: 280px;
         z-index: 5;
     }
     &--train {
         position: absolute;
         top: 362px;
         z-index: 10;
-        @include desktop {
-            top: 355px;
-        }
     }
     &--grass {
         position: absolute;
-        top: 645px;
+        top: 710px;
         z-index: 15;
-        @include desktop {
-            top: 615px;
-        }
+    }
+    &--gradient {
+        position: absolute;
+        top: 700px;
+        z-index: 16;
     }
 }
 
 .parallax__img {
-    width: 100vw;
+    max-width: unset;
+    max-height: unset;
 }
 
 .welcome {
