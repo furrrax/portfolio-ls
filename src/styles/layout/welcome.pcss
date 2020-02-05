@@ -1,16 +1,19 @@
 .welcome__section {
     position: relative;
     background-color: #1b1f22;
+    
 }
 
 .parallax {
-    //position: relative;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: hidden;
+    @include tablets {
+        display: none;
+    }
 }
 
 .parallax__layer {
@@ -57,6 +60,10 @@
     display: flex;
     justify-content: center;
     z-index: 50;
+    @include tablets {
+        background-image: url(../images/content/welcome/tablet.png);
+        background-size: cover;
+    }
 }
 
 .welcome__container {
@@ -86,17 +93,24 @@
     @include tablets {
         margin-left: auto;
     }
+    @include phones {
+        display: none;
+    }
 }
 
 .welcome__me {
     position: absolute;
-    top: 50%;
+    top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 6;
     display: flex;
     @include tablets {
         flex-direction: column;
+        z-index: 51;
+    }
+    @include phones {
+        top: 24%;
     }
 }
 
@@ -122,6 +136,10 @@
     font-size: 72px;
     line-height: 82%;
     white-space: pre-line;
+    @include phones {
+        line-height: 120%;
+        font-size: 45px;
+    }
 }
 
 .welcome__scroll {

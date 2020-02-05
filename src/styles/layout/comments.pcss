@@ -9,7 +9,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 0;
+    height: unset;
 }
 
 .comments__leaf {
@@ -28,6 +28,9 @@
             right: 10%;
         }
     }
+    @include phones {
+        display: none;
+    }
 }
 
 .comments__slider {
@@ -40,6 +43,10 @@
 .comments__title-section {
     display: flex;
     align-items: center;
+    @include phones {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .comments__title {
@@ -52,6 +59,10 @@
     margin-left: 120px;
     @include tablets {
         margin-left: 30px;
+    }
+    @include phones {
+        margin-top: 10%;
+        margin-left: 0;
     }
 }
 
@@ -78,6 +89,9 @@
 
 .comments__description {
     margin-top: 5%;
+    @include phones {
+        margin-top: 10%;
+    }
 }
 
 .comments__list {
@@ -98,9 +112,20 @@
             width: 30px;
             height: 30px;
         }
+        @include phones {
+            position: absolute;
+            right: 100%;
+            margin-right: 0;
+        }
     }
     &:last-child {
         margin-right: 0;
+    }
+    @include phones {
+        position: relative;
+        &:nth-child(2) {
+            display: none;
+        }
     }
 }
 
@@ -109,6 +134,10 @@
     flex-direction: column;
     justify-content: space-between;
     width: 330px;
+    @include phones {
+        width: 100%;
+        justify-content: unset;
+    }
 }
 
 .comments__user {
@@ -140,4 +169,5 @@
 
 .comments__user-about {
     color: #636567;
+    margin-top: 3%;
 }

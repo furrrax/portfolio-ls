@@ -7,6 +7,9 @@
     justify-content: flex-start;
     padding: 85px 0;
     position: relative;
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .footer__item-left {
@@ -19,10 +22,18 @@
         justify-content: flex-start;
         flex-direction: column;
     }
+    @include phones {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
 }
 
 .footer__year {
     width: 165px;
+    @include phones {
+        width: 100%;
+    }
 }
 
 .footer__year-text {
@@ -30,6 +41,9 @@
     font-weight: 600;
     color: #393a3d;
     font-size: 48px;
+    @include phones {
+        font-size: 65px;
+    }
 }
 
 .footer__me {
@@ -41,12 +55,18 @@
     font-family: 'Open Sans', sans-serif;
     white-space: pre-line;
     line-height: 190%;
+    @include phones {
+        white-space: nowrap;
+    }
 }
 
 .welcome__name-footer {
     font-weight: 700;
     color: #fff;
     font-size: 18px;
+    @include phones {
+        font-size: 25px;
+    }
 }
 
 .welcome__desc-footer {
@@ -54,6 +74,9 @@
     color: #555658;
     font-size: 16px;
     margin-top: 20px;
+    @include phones {
+        margin-top: 0;
+    }
 }
 
 .footer__item-right {
@@ -61,6 +84,9 @@
     flex-direction: column;
     align-items: flex-start;
     width: 980px;
+    @include phones {
+        width: 100%;
+    }
 }
 
 .footer__info {
@@ -71,6 +97,9 @@
     height: 100%;
     @include tablets {
         flex-direction: column;
+    }
+    @include phones {
+        margin-top: 20%;
     }
 }
 
@@ -108,6 +137,9 @@
     line-height: 190%;
     @include tablets {
         margin-bottom: 30px;
+    }
+    @include phones {
+        font-size: 16px;
     }
 }
 

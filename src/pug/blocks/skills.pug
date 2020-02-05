@@ -1,10 +1,17 @@
 script(type="text/x-template")#skills-list
-    .skills-widget
-        ul.user-skills
-            li.user-skills__item(v-for="skill in skills")
-                skills-row(
-                    :skill="skill"
-                )
+    section.skills
+        +image('content/skills/skills-hands.png', 'skills__hands', 'картинка руки на клавиатуре')
+        .skills__container.container
+            .skills__desc
+                h2.skills__title.title Чем я могу быть полезен вам
+                .skills__text 
+                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+                .skills-widget
+                    ul.user-skills
+                        li.user-skills__item(v-for="skill in skills")
+                            skills-row(
+                                :skill="skill"
+                            )
             
 
 script(type="text/x-template")#skills-row

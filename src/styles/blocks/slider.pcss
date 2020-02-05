@@ -13,6 +13,9 @@
     @include desktop {
         bottom: 30px;
     }
+    @include phones {
+        display: none;
+    }
 }
 
 .slider__list {
@@ -56,6 +59,11 @@
     @include desktop {
         bottom: 30px;
     }
+    @include phones {
+        bottom: 0;
+        left: unset;
+        right: 0;
+    }
 }
 
 .slider__button {
@@ -89,5 +97,8 @@
     @include desktop {
         font-size: 300px;
         right: -130px;
+    }
+    @include phones {
+        display: none;
     }
 }

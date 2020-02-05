@@ -8,11 +8,18 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    @include phones {
+        padding: 100px 0;
+        width: 100%;
+    }
 }
 
 .work__title {
     color: #414855;
     font-size: 36px;
+    @include phones {
+        text-align: center;
+    }
 }
 
 .work__content {
@@ -22,6 +29,9 @@
     @include tablets {
         flex-direction: column;
         margin-top: 60px;
+    }
+    @include phones {
+        margin-top: 30px;
     }
 }
 
@@ -33,6 +43,10 @@
         margin-right: 0;
         width: 85%;
     }
+    @include phones {
+        margin-bottom: 60px;
+        width: 100%;
+    }
 }
 
 .work__description-content {
@@ -41,6 +55,10 @@
     @include tablets {
         margin-top: 30px;
         width: 100%;
+    }
+    @include phones {
+        width: 85%;
+        margin: 0 auto;
     }
 }
 
@@ -55,6 +73,9 @@
     @include tablets {
         display: flex;
         justify-content: center;
+    }
+    @include phones {
+        justify-content: flex-start;
     }
 }
 
@@ -96,6 +117,9 @@
     @include tablets {
         text-align: center;
     }
+    @include phones {
+        text-align: left;
+    }
 }
 
 .work__description-item {
@@ -109,6 +133,9 @@
     @include tablets {
         display: flex;
         justify-content: center;
+    }
+    @include phones {
+        justify-content: flex-start;
     }
 }
 

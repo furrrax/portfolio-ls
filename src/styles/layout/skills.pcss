@@ -37,6 +37,9 @@
         transform-origin: 0 0;
         width: 45%;
     }
+    @include phones {
+        width: 75%;
+    }
 }
 
 .skills__desc {
@@ -47,12 +50,20 @@
         text-align: center;
         align-items: center;
     }
+    @include phones {
+        align-items: flex-start;
+        width: 100%;
+    }
 }
 
 .skills__title {
     font-size: 30px;
     @include tablets {
         width: 265px;
+    }
+    @include phones {
+        width: unset;
+        text-align: left;
     }
 }
 
@@ -66,5 +77,9 @@
     @include tablets {
         margin-top: 32px;
         width: 465px;
+    }
+    @include phones {
+        width: unset;
+        text-align: left;
     }
 }

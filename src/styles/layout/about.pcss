@@ -4,6 +4,10 @@
     display: flex;
     align-items: center;
     z-index: 20;
+    @include phones {
+        max-height: unset;
+        padding: 50px 0;
+    }
 
 }
 
@@ -11,9 +15,8 @@
     bottom: 0;
     position: absolute;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     z-index: 5;
-    //height: 100%;
 }
 
 .about__container {
@@ -25,6 +28,9 @@
 .about__wrapper {
     display: flex;
     justify-content: center;
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .about__row-me {
@@ -36,6 +42,9 @@
         min-width: 216px;
         margin-right: 100px;
     }
+    @include phones {
+        margin-right: 0;
+    }
 }
 
 .about__photo {
@@ -44,6 +53,10 @@
     margin-bottom: 75px;
     @include tablets {
         justify-content: flex-start;
+    }
+    @include phones {
+        justify-content: center;
+        margin-bottom: 30px;
     }
 }
 
@@ -67,6 +80,9 @@
 
 .about__data-text {
     margin-left: 78px;
+    @include phones {
+        margin-left: 78px;
+    }
 }
 
 .about__ndx, .about__txt, .about__hello, .about__work {
@@ -97,6 +113,9 @@
     @include tablets {
         max-width: 370px;
     }
+    @include phones {
+        margin-top: 45px;
+    }
 }
 
 .about__hello, .about__work {
@@ -110,6 +129,9 @@
 
 .about__hello {
     margin-bottom: 30px;
+    @include phones {
+        margin-bottom: 20px;
+    }
 }
 
 .about__name {
@@ -135,5 +157,8 @@
         color: #3f2224;
         left: -60px;
         top: 10px;
+        @include phones {
+            left: -10%;
+        }
     }
 }

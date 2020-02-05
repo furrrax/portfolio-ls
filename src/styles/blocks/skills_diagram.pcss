@@ -9,6 +9,9 @@
     @include tablets {
         margin-left: 0;
     }
+    @include phones {
+        margin-top: 10%;
+    }
 }
 
 .user-skills__item {
@@ -40,6 +43,9 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    @include phones {
+        flex-wrap: wrap;
+    }
 }
 
 .skills-row__item {
@@ -49,6 +55,15 @@
     }
     &:last-child {
         margin-right: 0;
+    }
+    @include phones {
+        &:first-child {
+            margin-bottom: 20px;
+        }
+        &:nth-child(2) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }        
     }
 }
 
