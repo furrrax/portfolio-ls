@@ -13,14 +13,24 @@ html(lang="ru")
                 .welcome__section
                     .parallax
                         picture.parallax__layer.parallax__layer--sky
-                            //-source(srcset="images/content/welcome/parallax-sky-1920.jpg" media="(min-width: 1920px)").parallax__img
-                            +image('content/welcome/parallax-sky-1920.jpg', 'parallax__img')
+                            source(srcset=require("images/content/welcome/parallax-1-2k.jpg") media="(min-width: 1920px)").parallax__img
+                            img(srcset=require("images/content/welcome/parallax-1.jpg")).parallax__img
+                            //-+image('content/welcome/parallax-sky-1920.jpg', 'parallax__img')
                         picture.parallax__layer.parallax__layer--mountains
-                            +image('content/welcome/parallax-mountains-1920.png', 'parallax__img')
+                            source(srcset=require("images/content/welcome/parallax-2-2k.png") media="(min-width: 1920px)").parallax__img
+                            img(srcset=require("images/content/welcome/parallax-2.png")).parallax__img
+                            //-+image('content/welcome/parallax-mountains-1920.png', 'parallax__img')
                         picture.parallax__layer.parallax__layer--train
-                            +image('content/welcome/parallax-train-1920.png', 'parallax__img')
+                            source(srcset=require("images/content/welcome/parallax-3-2k.png") media="(min-width: 1920px)").parallax__img
+                            img(srcset=require("images/content/welcome/parallax-3.png")).parallax__img
+                            //-+image('content/welcome/parallax-train-1920.png', 'parallax__img')
                         picture.parallax__layer.parallax__layer--grass
-                            +image('content/welcome/parallax-grass-1920.png', 'parallax__img')
+                            source(srcset=require("images/content/welcome/parallax-4-2k.png") media="(min-width: 1920px)").parallax__img
+                            img(srcset=require("images/content/welcome/parallax-4.png")).parallax__img
+                            //-+image('content/welcome/parallax-grass-1920.png', 'parallax__img')
+                        picture.parallax__layer.parallax__layer--gradient
+                            source(srcset=require("images/content/welcome/parallax-5-2k.png") media="(min-width: 1920px)").parallax__img
+                            img(srcset=require("images/content/welcome/parallax-5.png")).parallax__img
 
                     include ./pug/sections/welcome.pug
                     include ./pug/sections/about.pug
