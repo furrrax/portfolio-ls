@@ -31,7 +31,7 @@ new Vue({
                     480: {
                         slidesPerView: 1,
                         spaceBetween: 0,
-                        slidesPerGroup: 2
+                        slidesPerGroup: 1
                     }
                 }
             }
