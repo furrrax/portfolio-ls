@@ -75,6 +75,9 @@ new Vue({
 
             if (value > worksAmountComputerCounted) this.currentIndex = 0;
             if (value < 0) this.currentIndex = worksAmountComputerCounted;
+        },
+        changeSlide(id){
+            this.currentIndex = id-1;
         }
     },
     watch: {
