@@ -3,60 +3,68 @@ script(type="text/x-template")#slider-container
         .work__container.container
             .work__title.title Мои работы
             .work__content
-                display
-                info
+                display(
+                    :works="works",
+                    :currentWork="currentWork"
+                    :currentIndex="currentIndex"
+                    @slide="handleSlide"
+                )
+                info(
+                    :currentWork="currentWork"
+                )
 
 script(type="text/x-template")#slider-display
     .work__slider-content
         .slider__wrap
-            +image('content/work/slide-bg.jpg', 'slide__bg', 'превью слайда')
+            img(:src="currentWork.photo", alt="слайд", class="slide__bg")
             .slider
-                thumbs
-            btns
-            .slider__count 2
+                thumbs(
+                    :works="works"
+                    :currentWork="currentWork"
+                )
+            btns(
+                @slide="$emit('slide', $event)"
+            )
+            .slider__count {{currentIndex+1}}
 
 script(type="text/x-template")#slider-thumbs
     ul.slider__list
-        li.slider__item.slider__item--active
+        li.slider__item(
+            v-for="work in works"
+            :class="{slider__item_active: work.id === currentWork.id}"
+            )
             a.slider__link(href="#")
-                +image('content/work/slides/slider-1.jpg', 'slide__preview', 'превью слайда')
-        li.slider__item
-            a.slider__link(href="#")
-                +image('content/work/slides/slider-2.jpg', 'slide__preview', 'превью слайда')
-        li.slider__item
-            a.slider__link(href="#")
-                +image('content/work/slides/slider-3.jpg', 'slide__preview', 'превью слайда')
-        li.slider__item
-            a.slider__link(href="#")
-                +image('content/work/slides/slider-4.jpg', 'slide__preview', 'превью слайда')
+                img(:src="work.photo" alt="превью слайда" class="slide__preview")
 
 script(type="text/x-template")#slider-btns
     .slider__buttons
-        a.slider__button.slider__button--next(href="#")
+        a(@click.prevent="$emit('slide', 'next')" href="#").slider__button.slider__button--next
             +icon('arrow-down', 'slider__icon')
-        a.slider__button.slider__button--prev(href="#")
+        a(@click.prevent="$emit('slide', 'prev')" href="#").slider__button.slider__button--prev
             +icon('arrow-down', 'slider__icon')
 
 script(type="text/x-template")#slider-info
     .work__description-content
         .work__description-wrap
-            tags
+            tags(
+                :tags="tagsArray"
+            )
             .work__site
                 .work__site-item.title
-                    span Сайт школы образования
+                    span {{currentWork.title}}
             .work__description
                 .work__description-item
-                    p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    p {{currentWork.desc}}
             .work__url
                 .work__url-item
-                    a.work__url-link(href="#") 
+                    a.work__url-link(:href="currentWork.link") 
                         +icon('link', 'work__url-icon')
                         span.work__url-text Посмотреть сайт
 
 script(type="text/x-template")#slider-tags
     .work__tags
-        - var tags = ['HTML', 'CSS', 'JavaScript']
+        //-- var tags = ['HTML', 'CSS', 'JavaScript']
         ul.work__tags-list
-            each item in tags
-                li.work__tags-item
-                    span.work__tags-text #{item}
+            //-each item in tags
+            li.work__tags-item(v-for="tag in tags")
+                span.work__tags-text {{tag}}

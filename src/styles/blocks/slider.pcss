@@ -25,9 +25,10 @@
 
 .slider__item {
     height: 100px;
-    &--active {
+    &_active {
         outline: 3px solid #dc9322;
         z-index: 10;
+        transition: 0.3s;
     }
     @include desktop {
         &:last-child {
