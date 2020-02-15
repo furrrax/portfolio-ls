@@ -1,47 +1,62 @@
-section.work
-    .work__container.container
-        .work__title.title Мои работы
-        .work__content
-            .work__slider-content
-                .slider__wrap
-                    +image('content/work/slide-bg.jpg', 'slide__bg', 'превью слайда')
-                    .slider
-                        ul.slider__list
-                            li.slider__item
-                                a.slider__link(href="#")
-                                    +image('content/work/slides/slide-thumb-01.jpg', 'slide__preview', 'превью слайда')
-                            li.slider__item
-                                a.slider__link(href="#")
-                                    +image('content/work/slides/slide-thumb-02.jpg', 'slide__preview', 'превью слайда')
-                            li.slider__item
-                                a.slider__link(href="#")
-                                    +image('content/work/slides/slide-thumb-03.jpg', 'slide__preview', 'превью слайда')
-                            li.slider__item
-                                a.slider__link(href="#")
-                                    +image('content/work/slides/slide-thumb-04.jpg', 'slide__preview', 'превью слайда')
-                    .slider__buttons
-                        a.slider__button.slider__button--next(href="#")
-                            +icon('arrow-down', 'slider__icon')
-                        a.slider__button.slider__button--prev(href="#")
-                            +icon('arrow-down', 'slider__icon')
-                    .slider__count 2
-            .work__description-content
-                .work__description-wrap
-                    .work__tags
-                        - var tags = ['HTML', 'CSS', 'JavaScript']
-                        ul.work__tags-list
-                            each item in tags
-                                li.work__tags-item
-                                    span.work__tags-text #{item}
-                    .work__site
-                        .work__site-item.title
-                            span Сайт школы образования
-                    .work__description
-                        .work__description-item
-                            p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                    .work__url
-                        .work__url-item
-                            a.work__url-link(href="#") 
-                                +icon('link', 'work__url-icon')
-                                span.work__url-text Посмотреть сайт
+script(type="text/x-template")#slider-container
+    section.work
+        .work__container.container
+            .work__title.title Мои работы
+            .work__content
+                display
+                info
 
+script(type="text/x-template")#slider-display
+    .work__slider-content
+        .slider__wrap
+            +image('content/work/slide-bg.jpg', 'slide__bg', 'превью слайда')
+            .slider
+                thumbs
+            btns
+            .slider__count 2
+
+script(type="text/x-template")#slider-thumbs
+    ul.slider__list
+        li.slider__item.slider__item--active
+            a.slider__link(href="#")
+                +image('content/work/slides/slider-1.jpg', 'slide__preview', 'превью слайда')
+        li.slider__item
+            a.slider__link(href="#")
+                +image('content/work/slides/slider-2.jpg', 'slide__preview', 'превью слайда')
+        li.slider__item
+            a.slider__link(href="#")
+                +image('content/work/slides/slider-3.jpg', 'slide__preview', 'превью слайда')
+        li.slider__item
+            a.slider__link(href="#")
+                +image('content/work/slides/slider-4.jpg', 'slide__preview', 'превью слайда')
+
+script(type="text/x-template")#slider-btns
+    .slider__buttons
+        a.slider__button.slider__button--next(href="#")
+            +icon('arrow-down', 'slider__icon')
+        a.slider__button.slider__button--prev(href="#")
+            +icon('arrow-down', 'slider__icon')
+
+script(type="text/x-template")#slider-info
+    .work__description-content
+        .work__description-wrap
+            tags
+            .work__site
+                .work__site-item.title
+                    span Сайт школы образования
+            .work__description
+                .work__description-item
+                    p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+            .work__url
+                .work__url-item
+                    a.work__url-link(href="#") 
+                        +icon('link', 'work__url-icon')
+                        span.work__url-text Посмотреть сайт
+
+script(type="text/x-template")#slider-tags
+    .work__tags
+        - var tags = ['HTML', 'CSS', 'JavaScript']
+        ul.work__tags-list
+            each item in tags
+                li.work__tags-item
+                    span.work__tags-text #{item}
