@@ -38,10 +38,12 @@ sendBtn.addEventListener('click', (event) => {
                 if(xhr.status >= 400) {
                     modalWindow.style.display = "flex";
                     modalText.textContent = 'Произошла ошибка';
+                    document.body.style.overflow = 'hidden';
                 } else {
                     modalWindow.style.display = "flex";
                     modalText.textContent = 'Письмо отправлено';
                     sendBtn.disabled = true;
+                    document.body.style.overflow = 'hidden';
 
                     setTimeout(function(){
                         sendBtn.disabled = false;
