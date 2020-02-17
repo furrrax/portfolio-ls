@@ -136,7 +136,7 @@
     color: #656667;
 }
 
-.contact__input, .contact__button {
+.contact__input, .form-error {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -172,15 +172,14 @@
 }
 
 .contact__button {
-    padding: 34px 118px;
-    background: linear-gradient(to right, #d37d1d, #dc9322);
-    text-transform: uppercase;
-    &:hover {
-        background: linear-gradient(to right, #ff8900, #ff9b00);
-    }
     @include phones {
         width: 100%;
         padding: 25px 0;
         text-align: center;
     }
+}
+
+.form-error {
+    color: red;
+    text-transform: uppercase;
 }

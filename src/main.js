@@ -7,3 +7,4 @@ import "./scripts/parallax";
 import "./scripts/skills";
 import "./scripts/comments-slider";
 import "./scripts/work";
+import "./scripts/contact";

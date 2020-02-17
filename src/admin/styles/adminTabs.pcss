@@ -1,0 +1,36 @@
+.nav {
+    padding-top: 20px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav__list-item {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #2d3c4e;
+    font-size: 16px;
+    padding: 0 30px;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 200%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-bottom: solid #5500f2 2px;
+        width: 0;
+        transition: width .6s;
+    }
+    
+    &:hover {
+        color: #5500f2;
+        &:after {
+            width: 100%;
+            transition: width .6s;
+        }
+    }  
+}

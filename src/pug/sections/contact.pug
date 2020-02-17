@@ -9,14 +9,17 @@ section.contact
                     .contact__wrap
                         span.contact__subtitle Введите ваше имя
                         input.contact__input.contact__input--name(type="text" name="name" placeholder="Вязовой Виталий" required)
+                        .form-error
                 label.contact__label.contact__label--email
                     .contact__wrap
                         span.contact__subtitle Введите ваш email
                         input.contact__input.contact__input--email(type="text" name="email" placeholder="cjuiceone@gmail.com" required)
+                        .form-error
             .contact__row.contact__row-message
                 label.contact__label.contact__label--message
                     .contact__wrap
                         span.contact__subtitle Сообщение к письму
                         textarea.contact__input.contact__input--message(name="message" placeholder="Требуется ваша помощь в создании сайта. Интересуют сроки и цена вопроса" required)
+                        .form-error
             .contact__row.contact__row-button
-                a.contact__button(href="#") Отправить
+                button.contact__button.button Отправить

@@ -13,7 +13,7 @@ mixin socials(listClassName, itemClassName, iconAreaClassName, iconClassName, ..
       ul(class=listClassName)
           each item in items
               li(class=itemClassName)
-                  a(href="#")(class=iconAreaClassName)
+                  a(href="#" class=iconAreaClassName)
                       +icon(item, iconClassName)
 
 mixin nav(navClassName, listClassName, itemClassName, linkClassName)
@@ -22,4 +22,4 @@ mixin nav(navClassName, listClassName, itemClassName, linkClassName)
           ul(class=listClassName)
               each item in menu
                   li(class=itemClassName)
-                      a(href="#")(class=linkClassName) #{item}
+                      a(href="#" class=linkClassName) #{item}

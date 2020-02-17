@@ -1,0 +1,15 @@
+@import "normalize.css";
+@import "../styles/mixins.pcss";
+@import "../styles/layout/base.pcss";
+
+@import "./styles/**/*.pcss";
+
+.container {
+    max-width: 1200px;
+    @include tablets {
+        max-width: 768px;
+    }
+    @include phones {
+        max-width: 320px;
+    }
+}
