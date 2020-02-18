@@ -2,6 +2,7 @@
   .adminPanel
       adminHeader
       adminTabs
+      router-view
 </template>
 
 <script>

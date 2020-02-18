@@ -1,0 +1,111 @@
+.header-container {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    //background-color: #f7f9fe;
+}
+
+.header-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #414c63;
+}
+
+.add-btn-header {
+    display: flex;
+    background-color: transparent;
+    margin-left: 60px;
+}
+
+.add-btn {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(90deg,#195be3,#3f35cb);
+    &::before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 2px;
+        background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 8px;
+        background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.add-btn-desc {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #383bcf;
+    margin-left: 13px;
+}
+
+.groups-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.add, .group {
+    padding: 30px;
+    width: 40%;
+    min-height: 388px;
+    -webkit-box-shadow: 8px 8px 10px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 8px 8px 10px 0px rgba(0,0,0,0.16);
+    box-shadow: 8px 8px 10px 0px rgba(0,0,0,0.16);
+    margin-bottom: 30px;
+}
+
+.group-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-group-name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #414c63;
+    outline: transparent;
+    border: 0;
+    &::-webkit-input-placeholder {
+        color: #9ea4af;
+    }
+    &::-moz-placeholder {
+        color: #9ea4af;
+    }
+    
+}
+
+.btn-confirm {
+    margin-left: auto;
+    width: 15px;
+    height: 15px;
+    background: svg-load('tick.svg', fill=#00d70a, width=15px, height=15px) center center no-repeat;
+}
+
+.btn-cancel {
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    background: svg-load('cross.svg', fill=#bf2929, width=15px, height=15px) center center no-repeat;
+}

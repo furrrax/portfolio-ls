@@ -1,7 +1,0 @@
-mixin nav(navClassName, listClassName, itemClassName, linkClassName)
-    nav(class=navClassName)
-        - var menu = ['Обо мне', 'Работы', 'Отзывы']
-        ul(class=listClassName)
-            each item in menu
-                li(class=itemClassName)
-                    a(href="#" class=linkClassName) #{item}
