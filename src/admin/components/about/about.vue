@@ -9,14 +9,18 @@
             form.add
                 .group-wrapper
                     .new-group
-                        input(type="text" placeholder="Название новой группы").new-group-name
-                        button.btn-confirm
-                        button.btn-cancel
+                        .new-group-name
+                            input(type="text" placeholder="Название новой группы").new-group-name-item
+                        .new-group-btns
+                            button.btn-confirm
+                            button.btn-cancel
                     .new-skills
                         .add-skill
-                            input(type="text" placeholder="Новый навык").add-new-skill
-                            input(type="text" placeholder="50").add-new-percent
-                            button.add-new-btn
+                            .add-new-skill
+                                input(type="text" placeholder="Новый навык").add-new-skill-item
+                            .add-new-percent
+                                input(type="text" placeholder="50").add-new-percent-item
+                            button.add-btn.add-btn-skill
             form.group
                 .group-wrapper
                     .edit-group
@@ -31,8 +35,9 @@
                         .skill-active
                             input(type="text" placeholder="Terminal").edit-skill-name
                             input(type="text" placeholder="90").edit-skill-percent
-                            button.btn-confirm
-                            button.btn-cancel
+                            .new-group-btns
+                                button.btn-confirm
+                                button.btn-cancel
                         .skill-active
                             input(type="text" placeholder="Gulp").edit-skill-name
                             input(type="text" placeholder="80").edit-skill-percent
@@ -45,9 +50,11 @@
                             button.btn-remove
                     .new-skills
                         .add-skill
-                            input(type="text" placeholder="Новый навык").add-new-skill
-                            input(type="text" placeholder="50").add-new-percent
-                            button.add-new-btn
+                            .add-new-skill
+                                input(type="text" placeholder="Новый навык").add-new-skill-item
+                            .add-new-percent
+                                input(type="text" placeholder="50").add-new-percent-item
+                            button.add-btn.add-btn-skill
             form.group
                 .group-wrapper
                     .edit-group
@@ -62,8 +69,9 @@
                         .skill-active
                             input(type="text" placeholder="CSS3").edit-skill-name
                             input(type="text" placeholder="90").edit-skill-percent
-                            button.btn-confirm
-                            button.btn-cancel
+                            .new-group-btns
+                                button.btn-confirm
+                                button.btn-cancel
                         .skill-active
                             input(type="text" placeholder="JavaScript").edit-skill-name
                             input(type="text" placeholder="80").edit-skill-percent
@@ -76,9 +84,11 @@
                             button.btn-remove
                     .new-skills
                         .add-skill
-                            input(type="text" placeholder="Новый навык").add-new-skill
-                            input(type="text" placeholder="50").add-new-percent
-                            button.add-new-btn
+                            .add-new-skill
+                                input(type="text" placeholder="Новый навык").add-new-skill-item
+                            .add-new-percent
+                                input(type="text" placeholder="50").add-new-percent-item
+                            button.add-btn.add-btn-skill
 
 </template>
 
