@@ -1,8 +1,20 @@
+.about {
+    position: relative;
+}
+
+.about-bg {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    z-index: -20;
+    filter: grayscale(100%) brightness(2.5);
+}
+
 .header-container {
     padding: 60px 0;
     display: flex;
     align-items: center;
-    //background-color: #f7f9fe;
+    z-index: 5;
 }
 
 .header-title {
@@ -68,10 +80,10 @@
 .add, .group {
     position: relative;
     padding: 30px;
-    width: 40%;
+    padding-bottom: 70px;
+    width: 45%;
     min-height: 385px;
-    -webkit-box-shadow: 8px 8px 10px 0px rgba(0,0,0,0.16);
-    -moz-box-shadow: 8px 8px 10px 0px rgba(0,0,0,0.16);
+    background-color: #fff;
     box-shadow: 8px 8px 10px 0px rgba(0,0,0,0.16);
     margin-bottom: 30px;
 }
@@ -81,7 +93,7 @@
     flex-direction: column;
 }
 
-.new-group {
+.new-group, .edit-group {
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
@@ -90,7 +102,7 @@
     border-bottom: 1px solid #dedee0;
 }
 
-.new-group-name {
+.new-group-name, .edit-group-name {
     position: relative;
     &::before {
         position: absolute;
@@ -103,7 +115,7 @@
     }
 }
 
-.new-group-name-item {
+.new-group-name-item, .group-name-item-active {
     position: relative;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -174,29 +186,22 @@
     }
 }
 
-.add-new-percent {
+.add-new-percent, .edit-skill-percent {
     position: relative;
     margin-left: 10px;
     width: 60px;
     padding-left: 10px;
-    &::before {
-        position: absolute;
-        content: "";
-        top: 120%;
-        left: 0;
-        transform: translateY(-50%);
-        border-bottom: 1px solid #000;
-        width: 100%;
-    }
+    padding-right: 20px;
+    
     &::after {
         position: absolute;
         content: '%';
         right: 10%;
+        bottom: 0;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         font-size: 16px;
         color: #8a909b;
-
     }
     &-item {
         width: 100%;
@@ -215,6 +220,61 @@
     }
 }
 
+.add-new-percent {
+    &::before {
+        position: absolute;
+        content: "";
+        top: 120%;
+        left: 0;
+        transform: translateY(-50%);
+        border-bottom: 1px solid #000;
+        width: 100%;
+    }
+}
+
 .add-btn-skill {
     margin-left: 30px;
+}
+
+.edit-skills {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #414c63;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.edit-skill-percent {
+    margin-left: auto;
+}
+
+.edit-group-btns {
+    margin-left: 85px;
+}
+
+.btn-edit {
+    width: 15px;
+    height: 15px;
+    background: svg-load('pencil.svg', fill=#a0a5b1, width=15px, height=15px) center center no-repeat;
+}
+
+.btn-remove {
+    margin-left: 20px;
+    width: 15px;
+    height: 15px;
+    background: svg-load('trash.svg', fill=#a0a5b1, width=15px, height=15px) center center no-repeat;
 }

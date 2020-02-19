@@ -1,5 +1,6 @@
 <template lang="pug">
     .about
+        img(src='../../../images/content/admin/about/about-bg.jpg').about-bg
         .header-container.container
             h1.header-title Блок "Обо мне"
             button.add-btn-header
@@ -24,30 +25,44 @@
             form.group
                 .group-wrapper
                     .edit-group
-                        input(type="text" placeholder="Workflow").group-name
-                        button.group-btn-edit
+                        .edit-group-name
+                            input(type="text" placeholder="Workflow").group-name-item-active
+                        .edit-group-btns
+                            button.btn-confirm
+                            button.btn-cancel
                     .edit-skills
-                        .skill-active
-                            input(type="text" placeholder="Git").edit-skill-name
-                            input(type="text" placeholder="100").edit-skill-percent
-                            button.btn-edit
-                            button.btn-remove
-                        .skill-active
-                            input(type="text" placeholder="Terminal").edit-skill-name
-                            input(type="text" placeholder="90").edit-skill-percent
-                            .new-group-btns
-                                button.btn-confirm
-                                button.btn-cancel
-                        .skill-active
-                            input(type="text" placeholder="Gulp").edit-skill-name
-                            input(type="text" placeholder="80").edit-skill-percent
-                            button.btn-edit
-                            button.btn-remove
-                        .skill-active
-                            input(type="text" placeholder="Webpack").edit-skill-name
-                            input(type="text" placeholder="85").edit-skill-percent
-                            button.btn-edit
-                            button.btn-remove
+                        .skill-item
+                            .edit-skill-name
+                                input(type="text" placeholder="Git").edit-skill-name-item
+                            .edit-skill-percent
+                                input(type="text" placeholder="100").edit-skill-percent-item
+                            .edit-group-btns
+                                button.btn-edit
+                                button.btn-remove
+                        .skill-item
+                            .edit-skill-name
+                                input(type="text" placeholder="Terminal").edit-skill-name-item
+                            .edit-skill-percent
+                                input(type="text" placeholder="90").edit-skill-percent-item
+                            .edit-group-btns
+                                button.btn-edit
+                                button.btn-remove
+                        .skill-item
+                            .edit-skill-name
+                                input(type="text" placeholder="Gulp").edit-skill-name-item
+                            .edit-skill-percent
+                                input(type="text" placeholder="80").edit-skill-percent-item
+                            .edit-group-btns
+                                button.btn-edit
+                                button.btn-remove
+                        .skill-item
+                            .edit-skill-name
+                                input(type="text" placeholder="Webpack").edit-skill-name-item
+                            .edit-skill-percent
+                                input(type="text" placeholder="85").edit-skill-percent-item
+                            .edit-group-btns
+                                button.btn-edit
+                                button.btn-remove
                     .new-skills
                         .add-skill
                             .add-new-skill
@@ -55,33 +70,48 @@
                             .add-new-percent
                                 input(type="text" placeholder="50").add-new-percent-item
                             button.add-btn.add-btn-skill
+            
             form.group
                 .group-wrapper
                     .edit-group
-                        input(type="text" placeholder="Frontend").group-name
-                        button.group-btn-edit
+                        .edit-group-name
+                            input(type="text" placeholder="Frontend").group-name-item-active
+                        .edit-group-btns
+                            button.btn-confirm
+                            button.btn-cancel
                     .edit-skills
-                        .skill-active
-                            input(type="text" placeholder="HTML5").edit-skill-name
-                            input(type="text" placeholder="100").edit-skill-percent
-                            button.btn-edit
-                            button.btn-remove
-                        .skill-active
-                            input(type="text" placeholder="CSS3").edit-skill-name
-                            input(type="text" placeholder="90").edit-skill-percent
-                            .new-group-btns
-                                button.btn-confirm
-                                button.btn-cancel
-                        .skill-active
-                            input(type="text" placeholder="JavaScript").edit-skill-name
-                            input(type="text" placeholder="80").edit-skill-percent
-                            button.btn-edit
-                            button.btn-remove
-                        .skill-active
-                            input(type="text" placeholder="jQuery и Vue.js").edit-skill-name
-                            input(type="text" placeholder="85").edit-skill-percent
-                            button.btn-edit
-                            button.btn-remove
+                        .skill-item
+                            .edit-skill-name
+                                input(type="text" placeholder="HTML5").edit-skill-name-item
+                            .edit-skill-percent
+                                input(type="text" placeholder="100").edit-skill-percent-item
+                            .edit-group-btns
+                                button.btn-edit
+                                button.btn-remove
+                        .skill-item
+                            .edit-skill-name
+                                input(type="text" placeholder="CSS3").edit-skill-name-item
+                            .edit-skill-percent
+                                input(type="text" placeholder="90").edit-skill-percent-item
+                            .edit-group-btns
+                                button.btn-edit
+                                button.btn-remove
+                        .skill-item
+                            .edit-skill-name
+                                input(type="text" placeholder="JavaScript").edit-skill-name-item
+                            .edit-skill-percent
+                                input(type="text" placeholder="80").edit-skill-percent-item
+                            .edit-group-btns
+                                button.btn-edit
+                                button.btn-remove
+                        .skill-item
+                            .edit-skill-name
+                                input(type="text" placeholder="jQuery и Vue.js").edit-skill-name-item
+                            .edit-skill-percent
+                                input(type="text" placeholder="85").edit-skill-percent-item
+                            .edit-group-btns
+                                button.btn-edit
+                                button.btn-remove
                     .new-skills
                         .add-skill
                             .add-new-skill
