@@ -5,7 +5,7 @@
         .works-container.container
             form.works-edit
                 .works-edit-wrapper
-                    h2.works-edit-title Редактирование работы
+                    h2.works-edit-maintitle Редактирование работы
                     .works-edit-maincontent
                         .works-edit-dragndrop
                             .dragndrop-content
@@ -41,67 +41,101 @@
                         button.works-edit-btn-cancel.admin-button Отмена
                         button.works-edit-btn-save.admin-button Сохранить
                     
-            .works-maincontent
-                .works-bar-add
+            ul.works-maincontent
+                li.works-bar.works-bar-add
                     .works-bar-add-content
                         button.works-bar-add-button
-                        p.works-bar-add-desc Добавить работу
+                        p.works-bar-add-desc
+                            | Добавить
+                            | работу
 
-                .works-bar.works-bar-edit
+                li.works-bar.works-bar-edit
                     .works-bar-header
+                        img(src='../../../images/content/work/slides/slider-1.jpg').works-bar-header-image
                         .works-bar-tags
-                            p.works-tag HTML5
-                            p.works-tag CSS
-                            p.works-tag JavaScript
+                            button.works-tag 
+                                .works-tag-text HTML5
+                            button.works-tag 
+                                .works-tag-text CSS
+                            button.works-tag 
+                                .works-tag-text JavaScript
                     .works-bar-content
                         p.works-bar-content-title Сайт школы образования
                         p.works-bar-content-desc Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
                         a(href="#").works-bar-content-link http://loftschool.ru
-                    .works-bar-btns
-                        button.works-bar-btn-edit Править
-                        button.works-bar-btn-delete Удалить
+                        .works-bar-btns
+                            button.works-bar-btn
+                                .works-bar-btn-text Править
+                                .works-bar-btn-edit
+                            button.works-bar-btn
+                                .works-bar-btn-text Удалить
+                                .works-bar-btn-delete
                         
-                .works-bar
+                li.works-bar
                     .works-bar-header
+                        img(src='../../../images/content/work/slides/slider-2.jpg').works-bar-header-image
                         .works-bar-tags
-                            p.works-tag HTML5
-                            p.works-tag CSS
-                            p.works-tag JavaScript
+                            button.works-tag 
+                                .works-tag-text HTML5
+                            button.works-tag 
+                                .works-tag-text CSS
+                            button.works-tag 
+                                .works-tag-text JavaScript
                     .works-bar-content
                         p.works-bar-content-title Сайт школы образования
                         p.works-bar-content-desc Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
                         a(href="#").works-bar-content-link http://loftschool.ru
-                    .works-bar-btns
-                        button.works-bar-btn-edit Править
-                        button.works-bar-btn-delete Удалить
+                        .works-bar-btns
+                            button.works-bar-btn
+                                .works-bar-btn-text Править
+                                .works-bar-btn-edit
+                            button.works-bar-btn
+                                .works-bar-btn-text Удалить
+                                .works-bar-btn-delete
 
-                .works-bar
+                li.works-bar
                     .works-bar-header
+                        img(src='../../../images/content/work/slides/slider-3.jpg').works-bar-header-image
                         .works-bar-tags
-                            p.works-tag HTML5
-                            p.works-tag CSS
-                            p.works-tag JavaScript
+                            button.works-tag 
+                                .works-tag-text HTML5
+                            button.works-tag 
+                                .works-tag-text CSS
+                            button.works-tag 
+                                .works-tag-text JavaScript
                     .works-bar-content
                         p.works-bar-content-title Сайт школы образования
                         p.works-bar-content-desc Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
                         a(href="#").works-bar-content-link http://loftschool.ru
-                    .works-bar-btns
-                        button.works-bar-btn-edit Править
-                        button.works-bar-btn-delete Удалить
-                
-                .works-bar
+                        .works-bar-btns
+                            button.works-bar-btn
+                                .works-bar-btn-text Править
+                                .works-bar-btn-edit
+                            button.works-bar-btn
+                                .works-bar-btn-text Удалить
+                                .works-bar-btn-delete
+
+                li.works-bar
                     .works-bar-header
+                        img(src='../../../images/content/work/slides/slider-4.jpg').works-bar-header-image
                         .works-bar-tags
-                            p.works-tag HTML5
-                            p.works-tag CSS
-                            p.works-tag JavaScript
+                            button.works-tag 
+                                .works-tag-text HTML5
+                            button.works-tag 
+                                .works-tag-text CSS
+                            button.works-tag 
+                                .works-tag-text JavaScript
                     .works-bar-content
                         p.works-bar-content-title Сайт школы образования
                         p.works-bar-content-desc Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
                         a(href="#").works-bar-content-link http://loftschool.ru
-                    .works-bar-btns
-                        button.works-bar-btn-edit Править
-                        button.works-bar-btn-delete Удалить
+                        .works-bar-btns
+                            button.works-bar-btn
+                                .works-bar-btn-text Править
+                                .works-bar-btn-edit
+                            button.works-bar-btn
+                                .works-bar-btn-text Удалить
+                                .works-bar-btn-delete
                         
 </template>
 
