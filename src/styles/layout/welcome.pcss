@@ -83,13 +83,13 @@
 }
 
 .welcome__nav {
-    @include tablets {
+    @include tabletsHd {
         display: none;
     }
 }
 
 .welcome__socials {
-    @include tablets {
+    @include tabletsHd {
         margin-left: auto;
     }
     @include phones {
@@ -104,7 +104,7 @@
     transform: translate(-50%, -50%);
     z-index: 6;
     display: flex;
-    @include tablets {
+    @include tabletsHd {
         flex-direction: column;
         z-index: 51;
     }
@@ -122,7 +122,7 @@
     white-space: pre-line;
     margin-right: 60px;
     text-align: right;
-    @include tablets {
+    @include tabletsHd {
         text-align: center;
         margin-right: 0;
     }

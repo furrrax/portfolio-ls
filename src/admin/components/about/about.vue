@@ -8,7 +8,7 @@
                 .add-btn-desc Добавить группу
         .groups-container.container
             form.add
-                .group-wrapper
+                .group-wrapper.group-wrapper-add
                     .new-group
                         .new-group-name
                             input(type="text" placeholder="Название новой группы").new-group-name-item

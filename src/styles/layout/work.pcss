@@ -27,7 +27,7 @@
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
-    @include tablets {
+    @include tabletsHd {
         flex-direction: column;
         margin-top: 60px;
     }
@@ -44,7 +44,7 @@
         min-width: 500px;
     }
 
-    @include tablets {
+    @include tabletsHd {
         margin-right: 0;
         width: 85%;
     }
@@ -58,7 +58,7 @@
 .work__description-content {
     display: flex;
     justify-content: center;
-    @include tablets {
+    @include tabletsHd {
         margin-top: 30px;
         width: 100%;
     }
@@ -70,13 +70,13 @@
 
 .work__description-wrap {
     max-width: 348px;
-    @include tablets {
+    @include tabletsHd {
         max-width: 455px;
     }
 }
 
 .work__tags {
-    @include tablets {
+    @include tabletsHd {
         display: flex;
         justify-content: center;
     }
@@ -121,11 +121,14 @@
 .work__site-item {
     font-size: 30px;
     color: #353e4f;
+    @include tabletsHd {
+        text-align: center;
+    }
 }
 
 .work__description {
     margin-top: 45px;
-    @include tablets {
+    @include tabletsHd {
         text-align: center;
     }
     @include phones {
@@ -141,7 +144,7 @@
 
 .work__url {
     margin-top: 50px;
-    @include tablets {
+    @include tabletsHd {
         display: flex;
         justify-content: center;
     }

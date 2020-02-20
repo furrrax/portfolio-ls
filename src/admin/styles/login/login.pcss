@@ -6,6 +6,9 @@
     bottom: 0;
     overflow: hidden;
     background-color: #3b4a5e;
+    @include phones {
+        background-color: #fff;
+    }
 }
 
 .auth-container {
@@ -26,6 +29,12 @@
     align-items: center;
     padding: 60px 75px;
     background-color: #fff;
+    @include phones {
+        height: 100vh;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .auth-title {
@@ -41,6 +50,9 @@
     padding-left: 45px;
     padding-bottom: 15px;
     border-bottom: 1px solid #414c63;
+    @include phones {
+        width: 100%;
+    }
 }
 
 .auth-login-title, .auth-password-title {
@@ -97,4 +109,8 @@
     font-size: 18px;
     color: #fff;
     text-transform: uppercase;
+    @include phones {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
 }
