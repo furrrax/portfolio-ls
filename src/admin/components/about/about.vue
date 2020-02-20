@@ -30,8 +30,8 @@
                         .edit-group-btns
                             button.btn-confirm
                             button.btn-cancel
-                    .edit-skills
-                        .skill-item
+                    ul.edit-skills
+                        li.skill-item
                             .edit-skill-name
                                 input(type="text" placeholder="Git").edit-skill-name-item
                             .edit-skill-percent
@@ -39,7 +39,7 @@
                             .edit-group-btns
                                 button.btn-edit
                                 button.btn-remove
-                        .skill-item
+                        li.skill-item
                             .edit-skill-name
                                 input(type="text" placeholder="Terminal").edit-skill-name-item
                             .edit-skill-percent
@@ -47,7 +47,7 @@
                             .edit-group-btns
                                 button.btn-edit
                                 button.btn-remove
-                        .skill-item
+                        li.skill-item
                             .edit-skill-name
                                 input(type="text" placeholder="Gulp").edit-skill-name-item
                             .edit-skill-percent
@@ -55,7 +55,7 @@
                             .edit-group-btns
                                 button.btn-edit
                                 button.btn-remove
-                        .skill-item
+                        li.skill-item
                             .edit-skill-name
                                 input(type="text" placeholder="Webpack").edit-skill-name-item
                             .edit-skill-percent
@@ -79,8 +79,8 @@
                         .edit-group-btns
                             button.btn-confirm
                             button.btn-cancel
-                    .edit-skills
-                        .skill-item
+                    ul.edit-skills
+                        li.skill-item
                             .edit-skill-name
                                 input(type="text" placeholder="HTML5").edit-skill-name-item
                             .edit-skill-percent
@@ -88,7 +88,7 @@
                             .edit-group-btns
                                 button.btn-edit
                                 button.btn-remove
-                        .skill-item
+                        li.skill-item
                             .edit-skill-name
                                 input(type="text" placeholder="CSS3").edit-skill-name-item
                             .edit-skill-percent
@@ -96,7 +96,7 @@
                             .edit-group-btns
                                 button.btn-edit
                                 button.btn-remove
-                        .skill-item
+                        li.skill-item
                             .edit-skill-name
                                 input(type="text" placeholder="JavaScript").edit-skill-name-item
                             .edit-skill-percent
@@ -104,7 +104,7 @@
                             .edit-group-btns
                                 button.btn-edit
                                 button.btn-remove
-                        .skill-item
+                        li.skill-item
                             .edit-skill-name
                                 input(type="text" placeholder="jQuery и Vue.js").edit-skill-name-item
                             .edit-skill-percent

@@ -27,6 +27,84 @@
                     .comments-edit-btns
                         button.comments-edit-btn-cancel.admin-button Отмена
                         button.comments-edit-btn-save.admin-button Сохранить
+
+            ul.comments-maincontent
+                li.comments-bar.comments-bar-add
+                    .comments-bar-add-content
+                        button.comments-bar-add-button
+                        p.comments-bar-add-desc
+                            | Добавить
+                            | отзыв
+            
+                li.comments-bar
+                    .comments-bar-header
+                        .comments-bar-ava
+                            img(src='../../../images/content/comments/vladimir.jpg').comments-bar-ava-pic
+                        .comments-bar-user
+                            .comments-bar-user-name Владимир Сабанцев
+                            .comments-bar-user-occ Преподаватель
+                    .comments-bar-content
+                        p.comments-bar-content-desc Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах
+                        .comments-bar-btns
+                            button.comments-bar-btn
+                                .comments-bar-btn-text Править
+                                .comments-bar-btn-edit
+                            button.comments-bar-btn
+                                .comments-bar-btn-text Удалить
+                                .comments-bar-btn-delete
+
+                li.comments-bar
+                    .comments-bar-header
+                        .comments-bar-ava
+                            img(src='../../../images/content/comments/dima.jpg').comments-bar-ava-pic
+                        .comments-bar-user
+                            .comments-bar-user-name Ковальчук Дмитрий
+                            .comments-bar-user-occ Основатель LoftSchool
+                    .comments-bar-content
+                        p.comments-bar-content-desc Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+                        .comments-bar-btns
+                            button.comments-bar-btn
+                                .comments-bar-btn-text Править
+                                .comments-bar-btn-edit
+                            button.comments-bar-btn
+                                .comments-bar-btn-text Удалить
+                                .comments-bar-btn-delete
+
+                li.comments-bar
+                    .comments-bar-header
+                        .comments-bar-ava
+                            img(src='../../../images/content/comments/vladimir.jpg').comments-bar-ava-pic
+                        .comments-bar-user
+                            .comments-bar-user-name Владимир Сабанцев
+                            .comments-bar-user-occ Преподаватель
+                    .comments-bar-content
+                        p.comments-bar-content-desc Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах
+                        .comments-bar-btns
+                            button.comments-bar-btn
+                                .comments-bar-btn-text Править
+                                .comments-bar-btn-edit
+                            button.comments-bar-btn
+                                .comments-bar-btn-text Удалить
+                                .comments-bar-btn-delete
+
+                li.comments-bar
+                    .comments-bar-header
+                        .comments-bar-ava
+                            img(src='../../../images/content/comments/dima.jpg').comments-bar-ava-pic
+                        .comments-bar-user
+                            .comments-bar-user-name Ковальчук Дмитрий
+                            .comments-bar-user-occ Основатель LoftSchool
+                    .comments-bar-content
+                        p.comments-bar-content-desc Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+                        .comments-bar-btns
+                            button.comments-bar-btn
+                                .comments-bar-btn-text Править
+                                .comments-bar-btn-edit
+                            button.comments-bar-btn
+                                .comments-bar-btn-text Удалить
+                                .comments-bar-btn-delete
+
+
 </template>
 
 <script>

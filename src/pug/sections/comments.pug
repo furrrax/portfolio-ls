@@ -19,7 +19,6 @@ script(type="text/x-template")#comments
                             .comments__user
                                 .comments__user-pic
                                     .avatar.comments__avatar
-                                        //-+image('content/comments/dima.jpg', 'avatar__image', 'аватар')
                                         img(:src="comment['avatar']").avatar__image
                                 .comments__user-info
                                     .comments__username.title {{comment['author']}}
