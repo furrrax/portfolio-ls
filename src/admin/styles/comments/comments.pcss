@@ -1,0 +1,113 @@
+.comments {
+    background: linear-gradient(to bottom, #f6f9fe, #fff);
+}
+
+.comments-edit {
+    width: 100%;
+    padding: 30px 20px;
+    background-color: #fff;
+    box-shadow: 8px 8px 10px 0px rgba(0,0,0,0.16);
+    &-maintitle {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: #414c63;
+        margin-bottom: 30px;
+    }
+    &-maincontent {
+        border-top: 1px solid #dedee0;
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 210px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    &-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #dee4ed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        &-add {
+            margin-right: 30px;
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &-icon {
+            width: 110px;
+            height: 110px;
+            background: svg-load('avatar.svg', fill=#fff, width=110px, height=110px) center center no-repeat;
+        }
+    }
+    &-load-button {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: #383bcf !important;
+        text-transform: unset !important;
+        background: transparent !important;
+    }
+    &-title, &-input {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    &-title {
+        color: #acb1bb;
+        margin-bottom: 20px;
+    }
+    &-input {
+        outline: transparent;
+        color: #414c63;
+        &-desc {
+            width: 100%;
+            height: 120px;
+            padding: 20px 20px;
+            border: 1px solid #d9dbe0;
+            resize: none;
+            line-height: 170%;
+        }
+    }
+    &-content {
+        width: 100%;
+    }
+    &-btns {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 220px;
+    }
+    &-btn-cancel {
+        margin-right: 60px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: #383bcf !important;
+        text-transform: unset !important;
+        background: transparent !important;
+    }
+    &-btn-save {
+        padding: 24px 40px;
+    }
+}
+
+.comments-edit-row {
+    &-author {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &-name, &-occ {
+            width: 48%;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #414c63;
+        }
+    }
+}
+
