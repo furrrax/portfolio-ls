@@ -7,13 +7,14 @@
                 .add-btn
                 .add-btn-desc Добавить группу
         .groups-container.container
-            form.add
+
+            form.add(@submit.prevent="addNewCategory")
                 .group-wrapper.group-wrapper-add
                     .new-group
                         .new-group-name
-                            input(type="text" placeholder="Название новой группы").new-group-name-item
+                            input(type="text" placeholder="Название новой группы" v-model="title").new-group-name-item
                         .new-group-btns
-                            button.btn-confirm
+                            input(type="submit" value="").btn-confirm
                             button.btn-cancel
                     .new-skills
                         .add-skill
@@ -123,7 +124,21 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
-    
-}
+    data: () => ({
+        title: ""
+    }),
+    methods: {
+        ...mapActions("categories", ["addCategory"]),
+        async addNewCategory() {
+            try {
+                await this.addCategory(this.title);
+
+            } catch(error) {
+                alert(error.message);
+            }
+        }
+    }
+};
 </script>
